@@ -13,13 +13,20 @@ app.get('/', (req, res) => {
 
 });
 
-
 app.get('/Dylan', (req, res) => {
 
-    //res.send('<p>home page</p>');
+    //res.send('<p>dylan's page</p>');
     res.sendFile('./views/dylan.html', { root: __dirname });
 
 });
+
+app.get('/Stephanie', (req, res) => {
+
+    //res.send('<p>stephanie's page</p>');
+    res.sendFile('./views/stephanie.html', { root: __dirname });
+
+});
+
 app.get('/about', (req, res) => {
 
     //res.send('<p>about page</p>');
